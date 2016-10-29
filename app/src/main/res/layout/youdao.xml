@@ -5,12 +5,12 @@
 
     <TableRow>
 
-        <TextView android:text="搜索："
-            android:textSize="18dp"/>
+        <TextView android:text="单词搜索："
+            android:textSize="18dp" />
 
         <EditText
-            android:ems="14"
-            android:id="@+id/txtSearchWord"
+            android:ems="13"
+            android:id="@+id/online_search_word"
             android:layout_width="match_parent" />
     </TableRow>
 
