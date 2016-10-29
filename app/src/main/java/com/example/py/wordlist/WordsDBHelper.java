@@ -9,9 +9,6 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 import com.example.py.wordlist.dummy.Words;
 
-/**
- * Created by hbs on 2015-10-5.
- */
 public class WordsDBHelper extends SQLiteOpenHelper {
 
     private final static String DATABASE_NAME = "wordsdb";//数据库名字

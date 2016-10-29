@@ -10,7 +10,6 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
 import android.widget.TextView;
@@ -21,13 +20,6 @@ import java.util.Map;
 
 import com.example.py.wordlist.dummy.Words;
 
-/**
- * A fragment representing a list of Items.
- * <p>
- * <p>
- * Activities containing this fragment MUST implement the {@link OnFragmentInteractionListener}
- * interface.
- */
 public class WordItemFragment extends ListFragment {
     private static final String TAG = "myTag";
 
@@ -42,15 +34,10 @@ public class WordItemFragment extends ListFragment {
     public static WordItemFragment newInstance() {
         WordItemFragment fragment = new WordItemFragment();
         Bundle args = new Bundle();
-        ;
         fragment.setArguments(args);
         return fragment;
     }
 
-    /**
-     * Mandatory empty constructor for the fragment manager to instantiate the
-     * fragment (e.g. upon screen orientation changes).
-     */
     public WordItemFragment() {
     }
 
@@ -62,7 +49,6 @@ public class WordItemFragment extends ListFragment {
 
         //为列表注册上下文菜单
         ListView mListView = (ListView) view.findViewById(android.R.id.list);
-        //   mListView.setOnCreateContextMenuListener(this);
         registerForContextMenu(mListView);
         return view;
     }
@@ -120,10 +106,6 @@ public class WordItemFragment extends ListFragment {
     @Override
     public boolean onContextItemSelected(MenuItem item) {
         TextView textId = null;
-        TextView textWord = null;
-        TextView textMeaning = null;
-        TextView textSample = null;
-
         AdapterView.AdapterContextMenuInfo info = null;
         View itemView = null;
 

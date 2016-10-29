@@ -5,22 +5,6 @@ import android.provider.BaseColumns;
 
 public class Words {
 
-    //单词列表项
-    public static class WordItem {
-        public String id;
-        public String word;
-
-        public WordItem(String id, String word) {
-            this.id = id;
-            this.word = word;
-        }
-
-        @Override
-        public String toString() {
-            return word;
-        }
-    }
-
     //每个单词的描述
     public static class WordDescription {
         public String id;
@@ -40,8 +24,6 @@ public class Words {
 
     public Words() {
     }
-
-    //注意，接口BaseColumns接口有一个字段为"_ID",该字段对于ContentProvider非常重要
 
     /**
      * Word表共4个字段：_ID(从接口BaseColumns而来)、word、meaning、sample

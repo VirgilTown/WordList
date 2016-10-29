@@ -17,9 +17,6 @@ public class WordDetailActivity extends AppCompatActivity implements WordDetailF
             return;
         }
 
-        //    setContentView(R.layout.activity_word_detail);
-
-
         if (savedInstanceState == null) {
             WordDetailFragment detailFragment = new WordDetailFragment();
             detailFragment.setArguments(getIntent().getExtras());

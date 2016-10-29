@@ -3,19 +3,10 @@ package com.example.py.wordlist;
 /**
  * Created by py on 2016/10/7.
  */
-import android.app.AlertDialog;
 import android.content.ContentValues;
-import android.content.Context;
-import android.content.DialogInterface;
-import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
-import android.os.Bundle;
 import android.util.Log;
-import android.widget.EditText;
-import android.widget.TableLayout;
-import android.widget.Toast;
-
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
@@ -82,7 +73,7 @@ public class WordsDB {
 
         String[] projection = {
                 Words.Word._ID,
-                Words.Word.COLUMN_NAME_WORD
+                Words.Word.COLUMN_NAME_WORD,
         };
 
         //排序
