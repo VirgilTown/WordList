@@ -19,7 +19,6 @@ import com.example.py.wordlist.dummy.Words;
  * 删：删除单词
  * 改：修改单词
  * 查：查询单词
- * Created by hbs on 2015-10-21.
  */
 public class WordsDB {
     private static final String TAG = "myTag";
